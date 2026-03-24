@@ -91,7 +91,13 @@ if uploaded_file:
     with st.expander("📄 Resume Text Preview"):
         st.text_area("Resume Content", text[:500], height=25)
 
-# its mee
+
+if st.button("Use Sample Resume"):
+   
+   uploaded_file = open("sample_resume.pdf", "rb")
+
+#  its mee
+
 st.markdown("---")
 st.markdown("👨‍💻 Developed by Vardhini | AI Project")
 
